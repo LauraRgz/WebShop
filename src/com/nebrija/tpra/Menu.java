@@ -1,5 +1,6 @@
 package com.nebrija.tpra;
 
+import java.io.FileInputStream;
 import java.util.Iterator;
 import java.util.Scanner;
 
@@ -133,7 +134,22 @@ public class Menu {
 					 list1.get(i).setStock(list1.get(i).getStock()-1);
 				 } 
 			 }
-		 } 
+		 }
+		 
+		 else if (selector == 6) {
+			 FileInputStream fis = null;
+				try {
+					fis = new FileInputStream("./AboutUs.txt");
+					byte[] aboutUs = new byte[100];
+					fis.read(aboutUs);		
+					System.out.println(new String(aboutUs));
+				}
+				catch (Exception e){
+					e.printStackTrace();
+				}
+				finally {
+				}
+		 }
 	 }
 	 while (selector != 0);
  }
