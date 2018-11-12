@@ -6,34 +6,34 @@ I have created two files: one to write all the products that are added to a list
 
 ```
 lista.add(productToList);
-		File file = new File("./ProductList.txt");
-		FileOutputStream fos = null;
+	File file = new File("./ProductList.txt");
+	FileOutputStream fos = null;
 		
-  try {
-			fos = new FileOutputStream("./ProductList.txt", true);	
-			fos.write(productToList.getName().getBytes());
-			fos.write(String.valueOf(productToList.getId()).getBytes());
-			fos.write(String.valueOf(productToList.getPrize()).getBytes());
-			fos.write(String.valueOf(productToList.getStock()).getBytes());
-			fos.write(productToList.getCategoryProduct().getBytes());
-		}
-  
-		catch (Exception e){
-			e.printStackTrace();
-		}
-  
-		finally {
-			try {
-				fos.close();
-				file.deleteOnExit();
-			}
-   
-			catch (Exception e) {
-				
-			}
-		}
-		
+ 	try {
+		fos = new FileOutputStream("./ProductList.txt", true);	
+		fos.write(productToList.getName().getBytes());
+		fos.write(String.valueOf(productToList.getId()).getBytes());
+		fos.write(String.valueOf(productToList.getPrize()).getBytes());
+		fos.write(String.valueOf(productToList.getStock()).getBytes());
+		fos.write(productToList.getCategoryProduct().getBytes());
 	}
+  
+	catch (Exception e){
+		e.printStackTrace();
+	}
+  
+	finally {
+		try {
+			fos.close();
+			file.deleteOnExit();
+		}
+   
+		catch (Exception e) {
+				
+		}
+	}
+		
+}
 ```
 
 
