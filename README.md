@@ -113,7 +113,22 @@ We are asked for the product name.
 
 ### Option 6: About us
 This option shows the txt written on the AboutUs file.
+```
+else if (selector == 6) {
+	FileInputStream fis = null;
+		try {
+			fis = new FileInputStream("./AboutUs.txt");
+			byte[] aboutUs = new byte[100];
+			fis.read(aboutUs);		
+			System.out.println(new String(aboutUs));
+		}
+		catch (Exception e){
+			e.printStackTrace();
+		}
+		finally {}
+}
 
+```
 
 ### Option 0: Exit
 This option stops the application
