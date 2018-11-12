@@ -1,2 +1,82 @@
-# WebShop
+# Práctica 1
 
+I created an application that manages the products of an e-commerce. You can search a product by name, see all the products of a category, see all available products, create an account, and buy a product.
+The project has five classes: 
+
+## Product 
+This class has the following attributes:
+* *id*: This is the product identificatory number.
+* *name*: The product name.
+* *stock*: Number of available products.
+* *prize*: The prize of each product (in £).
+* *categoryProduct*: The category this product belongs to.
+
+It also has a method named *showProduct*. It prints the value of a product’s attributes.
+
+## User
+This class has four attributes:
+*	*Email*: The person’s email.
+*	*Password*: The password to sign in.
+*	*Login*: The person’s username.
+*	*Id*: Person’s identification number for this application. It is randomly generated.
+User has two methods:
+*	*newUser*: It creates a new username with an email, password and login.
+*	*showUser*: It prints a user’s email, username, and id.
+
+## ProductList
+This class generates a list of all the products. It has one attribute: *lista*. It is declared as an ArrayList that contains objects from the Product class.
+
+The methods are:
+*	*addProduct*: This allows us to add a new product to the list.
+* *deleteProduct*: We can delete products from the list.
+* *Get*: This method returns the object that is in the “i” position.
+*	*Size*: It returns the size of the list.
+
+## UserList
+This class generates a user list. Like ProductList, it has one attribute: *lista*. It is also declared as an ArrayList that contains objects from the class User.
+
+The UserList methods are similar to the ProductList ones:
+*	*addUser*: It adds users to the list.
+*	*Get*: It returns the object in the “i” position.
+*	*Size*: This method returns the size of the UserList.
+
+## Menu
+This class has one method that prints the menu and it also has the main method.
+*	*Main*: I have created three objects in three different categories:
+  * Category Books:
+      * libro1
+      * libro2
+      * libro3
+  * Category Films:
+      * film1
+      *	film2
+      *	film3
+ * Category Music:
+      *	cd1
+      *	cd2
+      *	cd3
+
+Then I created a *do-while* loop to do implement the menu. 
+I declared *selector* which is the option that the user has chosen.
+Once we choose an option, we enter in the *if-else* that leads us to the option that we have chosen.
+
+### Option 1: Search products
+This option looks for a product on the ProductList and prints it.
+We are asked for a name and, if the name of the product exists, the attributes    will be shown.
+
+### Option 2: See by category
+This option prints all the products from a category.
+We are asked for a category name, the category exists, the attributes of every product will be printed.
+
+### Option 3: See all products
+This option prints all the products in the list of products.
+
+### Option 4: Create an account
+This option allows people to create an account entering the email, password and username.
+
+### Option 5: Buy product
+This option allows people to purchase products from the list.
+We are asked for the product name.
+
+### Option 0: Exit
+This option stops the application
