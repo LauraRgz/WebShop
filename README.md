@@ -33,7 +33,7 @@ The methods are:
 * *Get*: This method returns the object that is in the “i” position.
 * *Size*: It returns the size of the list.
 * *addProduct*: This allows us to add a new product to the list. When a product is added to the list, it is also added to a file
-```
+```java
 lista.add(productToList);
 	File file = new File("./ProductList.txt");
 	FileOutputStream fos = null;
@@ -113,7 +113,7 @@ We are asked for the product name.
 
 ### Option 6: About us
 This option shows the txt written on the AboutUs file.
-```
+```java
 else if (selector == 6) {
 	FileInputStream fis = null;
 		try {
