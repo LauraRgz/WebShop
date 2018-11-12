@@ -12,6 +12,7 @@ public class Menu {
 		System.out.println ("3. See all products");
 		System.out.println ("4. Create an account");
 		System.out.println ("5. Buy product");
+		System.out.println ("6. About us");
 		System.out.println ("0. Exit");
 		System.out.println("-----------------------");
 	}
