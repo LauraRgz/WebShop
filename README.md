@@ -63,10 +63,41 @@ User has two methods:
 This class generates a list of all the products. It has one attribute: *lista*. It is declared as an ArrayList that contains objects from the Product class.
 
 The methods are:
-*	*addProduct*: This allows us to add a new product to the list.
 * *deleteProduct*: We can delete products from the list.
 * *Get*: This method returns the object that is in the “i” position.
-*	*Size*: It returns the size of the list.
+* *Size*: It returns the size of the list.
+* *addProduct*: This allows us to add a new product to the list. When a product is added to the list, it is also added to a file
+```
+lista.add(productToList);
+	File file = new File("./ProductList.txt");
+	FileOutputStream fos = null;
+		
+ 	try {
+		fos = new FileOutputStream("./ProductList.txt", true);	
+		fos.write(productToList.getName().getBytes());
+		fos.write(String.valueOf(productToList.getId()).getBytes());
+		fos.write(String.valueOf(productToList.getPrize()).getBytes());
+		fos.write(String.valueOf(productToList.getStock()).getBytes());
+		fos.write(productToList.getCategoryProduct().getBytes());
+	}
+  
+	catch (Exception e){
+		e.printStackTrace();
+	}
+  
+	finally {
+		try {
+			fos.close();
+			file.deleteOnExit();
+		}
+   
+		catch (Exception e) {
+				
+		}
+	}
+		
+}
+```
 
 ## UserList
 This class generates a user list. Like ProductList, it has one attribute: *lista*. It is also declared as an ArrayList that contains objects from the class User.
