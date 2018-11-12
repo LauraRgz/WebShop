@@ -1,41 +1,7 @@
 # Práctica 1
 
 I created an application that manages the products of an e-commerce. You can search a product by name, see all the products of a category, see all available products, create an account, and buy a product.
-### Files
 I have created two files: one to write all the products that are added to a list. The other one to read "About us".
-
-```
-lista.add(productToList);
-	File file = new File("./ProductList.txt");
-	FileOutputStream fos = null;
-		
- 	try {
-		fos = new FileOutputStream("./ProductList.txt", true);	
-		fos.write(productToList.getName().getBytes());
-		fos.write(String.valueOf(productToList.getId()).getBytes());
-		fos.write(String.valueOf(productToList.getPrize()).getBytes());
-		fos.write(String.valueOf(productToList.getStock()).getBytes());
-		fos.write(productToList.getCategoryProduct().getBytes());
-	}
-  
-	catch (Exception e){
-		e.printStackTrace();
-	}
-  
-	finally {
-		try {
-			fos.close();
-			file.deleteOnExit();
-		}
-   
-		catch (Exception e) {
-				
-		}
-	}
-		
-}
-```
-
 
 The project has five classes: 
 
@@ -144,6 +110,10 @@ This option allows people to create an account entering the email, password and 
 ### Option 5: Buy product
 This option allows people to purchase products from the list.
 We are asked for the product name.
+
+### Option 6: About us
+This option shows the txt written on the AboutUs file.
+
 
 ### Option 0: Exit
 This option stops the application
