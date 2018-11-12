@@ -1,4 +1,4 @@
-# Práctica 1
+# WebShop
 
 I created an application that manages the products of an e-commerce. You can search a product by name, see all the products of a category, see all available products, create an account, and buy a product.
 I have created two files: one to write all the products that are added to a list. The other one to read "About us".
