@@ -13,6 +13,7 @@ public class Menu {
 		System.out.println ("4. Create an account");
 		System.out.println ("5. Buy product");
 		System.out.println ("6. About us");
+		System.out.println ("7. See last added product");
 		System.out.println ("0. Exit");
 		System.out.println("-----------------------");
 	}
@@ -24,6 +25,7 @@ public class Menu {
 	 
 	 ProductList list1 = new ProductList();
 	 UserList list2 = new UserList();
+	 Product aux = new Product();
 	 
 	 Product libro1 = new Product(2.0, "libro1", 3, 4.5, "Books");
 	 Product libro2 = new Product(7.0, "libro2", 8, 9.5, "Books");
@@ -151,6 +153,12 @@ public class Menu {
 				finally {
 				}
 		 }
+		 
+		 else if (selector == 7) {
+				aux = list1.get(list1.size()-1);
+				aux.showProduct();
+				 
+		}
 	 }
 	 while (selector != 0);
  }

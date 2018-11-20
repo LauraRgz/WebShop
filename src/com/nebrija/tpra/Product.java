@@ -9,6 +9,8 @@ public class Product{
 	private double prize;
 	private String categoryProduct;
 	
+	ArrayList <Product> lista = new ArrayList<Product>();
+	
 	public String getCategoryProduct() {
 		return categoryProduct;
 	}
@@ -71,5 +73,20 @@ public class Product{
 			System.out.println("Stock: " + stock);
 			System.out.println("Category: " + categoryProduct);
 		}
+	}
+	
+	public Product thisLastProduct() {
+		Product p = new Product();
+		LastProduct lP = LastProduct.getLastProduct();
+		if(!lista.isEmpty()) {
+			p = lista.get(lista.size()-1);
+		}else {
+			p = null;
+		}
+		
+		lP.setUltimoProducto(p);
+		
+		return p;
+		
 	}
 }
