@@ -8,16 +8,17 @@ import java.util.Scanner;
 public class Menu {
 	
 	public void showMenu (){
-		
+		Locale locale2 = new Locale("en", "EN");
+		Internationalization message = new Internationalization(locale2);
 		System.out.println("-----------------------");
-		System.out.println ("1. Search product");
-		System.out.println ("2. See by category");
-		System.out.println ("3. See all products");
-		System.out.println ("4. Create an account");
-		System.out.println ("5. Buy product");
-		System.out.println ("6. About us");
-		System.out.println ("7. See last added product");
-		System.out.println ("0. Exit");
+		System.out.println(message.getMessages("option1", locale2));
+		System.out.println(message.getMessages("option2", locale2));
+		System.out.println(message.getMessages("option3", locale2));
+		System.out.println(message.getMessages("option4", locale2));
+		System.out.println(message.getMessages("option5", locale2));
+		System.out.println(message.getMessages("option6", locale2));
+		System.out.println(message.getMessages("option7", locale2));
+		System.out.println(message.getMessages("option8", locale2));	
 		System.out.println("-----------------------");
 	}
 	
@@ -71,9 +72,21 @@ public class Menu {
 	 list1.addProduct(cd3);
 	 Menu menu = new Menu();
 	 
+	 int languageSelector;
+	 System.out.println("Select language: 1 = English, 2 = Español, 3 = Italiano");
+	 System.out.println("Enter an option");
+	 languageSelector = entrada.nextInt();
+	
+	 
 	  do{
 		 System.out.println(" ");
-		 menu.showMenu();
+		 if (languageSelector == 1) {
+			 menu.showMenu();
+		 }
+		 else if(languageSelector == 2) {
+			 menu.mostrarMenu();
+		 }
+		 
 		 System.out.println("Enter an option");
 		 selector = entrada.nextInt();
 		

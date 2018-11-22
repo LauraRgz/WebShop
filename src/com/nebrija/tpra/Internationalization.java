@@ -12,7 +12,6 @@ public class Internationalization {
 	
 	public Internationalization (Locale locale) {
 		this.locale = locale;
-		//this.locale = Objects.requireNonNull(locale);
 		texto = ResourceBundle.getBundle("MenuBoundle", locale);
 	}
 	
