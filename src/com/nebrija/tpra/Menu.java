@@ -2,12 +2,15 @@ package com.nebrija.tpra;
 
 import java.io.FileInputStream;
 import java.util.Iterator;
+import java.util.Locale;
 import java.util.Scanner;
 
 public class Menu {
-	public void mostrarMenu (){
+	
+	public void showMenu (){
+		
 		System.out.println("-----------------------");
-		System.out.println ("1. Search products");
+		System.out.println ("1. Search product");
 		System.out.println ("2. See by category");
 		System.out.println ("3. See all products");
 		System.out.println ("4. Create an account");
@@ -17,8 +20,24 @@ public class Menu {
 		System.out.println ("0. Exit");
 		System.out.println("-----------------------");
 	}
+	
+	public void mostrarMenu() {
+		Locale locale1 = new Locale("es", "ES");
+		Internationalization message = new Internationalization(locale1);
+		System.out.println("-----------------------");
+		System.out.println(message.getMessages("option1", locale1));
+		System.out.println(message.getMessages("option2", locale1));
+		System.out.println(message.getMessages("option3", locale1));
+		System.out.println(message.getMessages("option4", locale1));
+		System.out.println(message.getMessages("option5", locale1));
+		System.out.println(message.getMessages("option6", locale1));
+		System.out.println(message.getMessages("option7", locale1));
+		System.out.println(message.getMessages("option8", locale1));	
+		System.out.println("-----------------------");
+	}
 
  public static void main(String[] args) {
+	
 	 
 	 Scanner entrada = new Scanner(System.in);
 	 int selector;
@@ -52,10 +71,9 @@ public class Menu {
 	 list1.addProduct(cd3);
 	 Menu menu = new Menu();
 	 
-	
 	  do{
 		 System.out.println(" ");
-		 menu.mostrarMenu();
+		 menu.showMenu();
 		 System.out.println("Enter an option");
 		 selector = entrada.nextInt();
 		
