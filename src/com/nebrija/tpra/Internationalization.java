@@ -12,7 +12,7 @@ public class Internationalization {
 	
 	public Internationalization (Locale locale) {
 		this.locale = locale;
-		texto = ResourceBundle.getBundle("MenuBoundle", locale);
+		texto = ResourceBundle.getBundle("WebShopBundle", locale);
 	}
 	
 	public Locale getLocale() {

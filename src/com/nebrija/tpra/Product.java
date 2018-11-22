@@ -1,6 +1,7 @@
 package com.nebrija.tpra;
 
 import java.util.ArrayList;
+import java.util.Locale;
 
 public class Product{
 	private double id;
@@ -66,12 +67,43 @@ public class Product{
 	}
 	public void showProduct() {
 		if (this != null) {
+			Locale locale1 = new Locale("en", "EN");
+			Internationalization message = new Internationalization(locale1);
 			System.out.println(" ");
-			System.out.println("Name: " + name);
-			System.out.println("ID: " + id);
-			System.out.println("Prize: " + prize + " £");
-			System.out.println("Stock: " + stock);
-			System.out.println("Category: " + categoryProduct);
+			
+			System.out.println(message.getMessages("name", locale1) + " " + name);
+			System.out.println(message.getMessages("id", locale1) + " " + id);
+			System.out.println(message.getMessages("prize", locale1) + " " + prize + " £");
+			System.out.println(message.getMessages("stock", locale1) + " " + stock);
+			System.out.println(message.getMessages("category", locale1) + " " + categoryProduct);
+		}
+	}
+	
+	public void mostrarProduct() {
+		if (this != null) {
+			Locale locale2 = new Locale("es", "ES");
+			Internationalization message = new Internationalization(locale2);
+			System.out.println(" ");
+			
+			System.out.println(message.getMessages("name", locale2) + " " + name);
+			System.out.println(message.getMessages("id", locale2) + " " + id);
+			System.out.println(message.getMessages("prize", locale2) + " " + prize + " £");
+			System.out.println(message.getMessages("stock", locale2) + " " + stock);
+			System.out.println(message.getMessages("category", locale2) + " " + categoryProduct);
+		}
+	}
+	
+	public void mostrareProduct() {
+		if (this != null) {
+			Locale locale3 = new Locale("it", "IT");
+			Internationalization message = new Internationalization(locale3);
+			System.out.println(" ");
+			
+			System.out.println(message.getMessages("name", locale3) + " " + name);
+			System.out.println(message.getMessages("id", locale3) + " " + id);
+			System.out.println(message.getMessages("prize", locale3) + " " + prize + " £");
+			System.out.println(message.getMessages("stock", locale3) + " " + stock);
+			System.out.println(message.getMessages("category", locale3) + " " + categoryProduct);
 		}
 	}
 	
