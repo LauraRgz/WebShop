@@ -69,8 +69,7 @@ public class Main {
 				menu.mostrareMenu();
 				System.out.println(message3.getMessages("selector", locale3));
 			 }
-			 
-	
+
 			 selector = entrada.nextInt();
 			
 			 if(selector == 1){
@@ -83,7 +82,7 @@ public class Main {
 				 }
 				 else if (languageSelector == 3) {
 					System.out.println(message3.getMessages("productName", locale3));
-				}
+				 }
 				 
 				 boolean found = false;
 				 String nombre = entrada.nextLine();
@@ -102,12 +101,9 @@ public class Main {
 						 else if (languageSelector == 3) {
 							 list1.get(i).mostrareProduct();
 						 }			 
-						 
-						 
 						 break;
 					 } 
-					
-				 }
+				}
 				 
 				if (!found) {
 					
