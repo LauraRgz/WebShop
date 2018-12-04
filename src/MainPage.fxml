@@ -48,9 +48,9 @@
             </MenuButton>
             <MenuButton fx:id="categoryDeploy" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#splitCategoryButton" prefHeight="32.0" prefWidth="130.0" text="Category" GridPane.columnIndex="2">
                <items>
-                  <MenuItem mnemonicParsing="false" text="Books" />
-                  <MenuItem mnemonicParsing="false" text="Music" />
-                  <MenuItem mnemonicParsing="false" text="Films" />
+                  <MenuItem fx:id="booksButton" mnemonicParsing="false" onAction="#pressBooksButton" text="Books" />
+                  <MenuItem fx:id="musicButton" mnemonicParsing="false" onAction="#pressMusicButton" text="Music" />
+                  <MenuItem fx:id="filmButton" mnemonicParsing="false" onAction="#pressFilmButton" text="Films" />
                </items>
                <font>
                   <Font name="Lucida Bright Demibold" size="14.0" />

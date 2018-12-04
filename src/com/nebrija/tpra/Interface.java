@@ -13,6 +13,7 @@ public class Interface extends Application{
 	static Stage buyStage;
 	static Stage searchStage;
 	static Stage seeAllStage;
+	static Stage signUpStage;
 	
 	@Override
 	public void start(Stage primaryStage) throws Exception {
@@ -52,6 +53,15 @@ public class Interface extends Application{
 			
 			seeAllStage.setTitle("SeeAllPage");
 			seeAllStage.setScene(sceneSeeAllPage);
+			
+			
+			signUpStage = new Stage();
+			URL signUpPage1 = getClass().getClassLoader().getResource("SignUpPage.fxml");
+			Parent rootSignUpPage = FXMLLoader.load(signUpPage1);
+			Scene sceneSignUpPage = new Scene(rootSignUpPage);
+			
+			signUpStage.setTitle("SignUpPage");
+			signUpStage.setScene(sceneSignUpPage);
 			
 		}
 		catch(Exception e){
