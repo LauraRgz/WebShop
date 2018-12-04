@@ -5,8 +5,12 @@ import java.util.Iterator;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class Menu {
+public class MenuClass {
 	
+	public MenuClass() {
+		
+	}
+
 	public void showMenu (){
 		Locale locale2 = new Locale("en", "EN");
 		Internationalization message = new Internationalization(locale2);

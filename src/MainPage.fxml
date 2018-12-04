@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="749.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.nebrija.tpra.MainPageController">
+   <children>
+      <GridPane layoutX="23.0" layoutY="28.0" prefHeight="53.0" prefWidth="704.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="390.0" minWidth="10.0" prefWidth="145.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="468.0" minWidth="0.0" prefWidth="131.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="468.0" minWidth="0.0" prefWidth="132.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="468.0" minWidth="10.0" prefWidth="132.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="468.0" minWidth="6.0" prefWidth="132.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="WebShop" wrappingWidth="140.935546875">
+               <font>
+                  <Font name="Lucida Bright Demibold Italic" size="30.0" />
+               </font>
+            </Text>
+            <MenuButton fx:id="productDeploy" alignment="CENTER" contentDisplay="CENTER" ellipsisString="" mnemonicParsing="false" onAction="#splitProductButton" prefHeight="32.0" prefWidth="130.0" text="Product" textAlignment="CENTER" GridPane.columnIndex="1">
+               <items>
+                  <MenuItem fx:id="buyButton" mnemonicParsing="false" onAction="#pressBuyButton" text="Buy" />
+                  <MenuItem fx:id="searchButton" mnemonicParsing="false" onAction="#pressSearchButton" text="Search" />
+                  <Menu mnemonicParsing="false" text="See">
+                     <items>
+                        <MenuItem fx:id="seeAllButton" mnemonicParsing="false" onAction="#pressSeeAllButton" text="See all" />
+                        <MenuItem fx:id="lastAddedButton" mnemonicParsing="false" onAction="#pressLastAddedButton" text="Last added product" />
+                     </items>
+                  </Menu>
+               </items>
+               <font>
+                  <Font name="Lucida Bright Demibold" size="14.0" />
+               </font>
+            </MenuButton>
+            <MenuButton fx:id="categoryDeploy" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#splitCategoryButton" prefHeight="32.0" prefWidth="130.0" text="Category" GridPane.columnIndex="2">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Books" />
+                  <MenuItem mnemonicParsing="false" text="Music" />
+                  <MenuItem mnemonicParsing="false" text="Films" />
+               </items>
+               <font>
+                  <Font name="Lucida Bright Demibold" size="14.0" />
+               </font>
+            </MenuButton>
+            <Button fx:id="signUpButton" mnemonicParsing="false" onAction="#pressSignUpButton" prefHeight="32.0" prefWidth="130.0" text="Sign up" GridPane.columnIndex="3">
+               <font>
+                  <Font name="Lucida Bright Demibold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="aboutUsButton" mnemonicParsing="false" onAction="#pressAboutUsButton" prefHeight="32.0" prefWidth="130.0" text="About us" GridPane.columnIndex="4">
+               <font>
+                  <Font name="Lucida Bright Demibold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </GridPane>
+   </children>
+</Pane>
