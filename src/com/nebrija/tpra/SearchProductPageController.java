@@ -23,15 +23,15 @@ public class SearchProductPageController {
     @FXML
     void pressSearchButton(ActionEvent event) {
      	
-    	/*String nameProduct = nameText.getText();
+    	String nameProduct = nameText.getText();
+    	
     	for (int i = 0; i< Main.getList1().size(); i++) {
-	    	if (funcion.option1(nameProduct) != null) {
-	    		
-	    		enterText.setText(funcion.option1(nameProduct).getName());
+	    	if (!nameProduct.equals(Main.getList1().get(i).getName())) {
+	    		enterText.setText(nameProduct);
 	    	}
 	    	else
-	    		enterText.setText("no");
-    	}*/
+	    		enterText.setText("Product not found");
+    	}
     }
     
 
