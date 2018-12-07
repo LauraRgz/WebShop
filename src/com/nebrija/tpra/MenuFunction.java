@@ -7,26 +7,47 @@ public class MenuFunction {
 	
 	 Scanner entrada = new Scanner(System.in);
 	 
-	 ProductList list1 = new ProductList();
+	 static ProductList list1 = new ProductList();
 	 UserList list2 = new UserList();
 	 Product aux = new Product();
 	 
-	 public void option1() {
-		 boolean found = false;
+	 //Search product
+	 public Product option1(String nameProduct) {
+		 /*boolean found = false;
 		 System.out.println("Enter a name");
 		 String nombre = entrada.nextLine();
-		 nombre = entrada.nextLine();
-		 for(int i = 0; i < list1.size();i++) {
-			 if(nombre.equals(list1.get(i).getName())) {
+		 nombre = entrada.nextLine();*/
+		 int i = 0;
+		 boolean found = false;
+		 while (i< list1.size()) {
+			 if (nameProduct.equals(list1.get(i).getName())){
 				 found = true;
+				 break;
+			 }
+			 i++;
+		 }
+	 
+		 if(found) {
+			 return list1.get(i);
+		 }
+		 else {
+			 return null;
+		 }
+	 }
+		 
+		 /*for(int i = 0; i < list1.size();i++) {
+			 if(n.equals(list1.get(i).getName())) {
+				
 					 list1.get(i).showProduct();
 					 break;
 			 }
-			 if (!found) {
+			 else {
 				 System.out.println("Product not found");
 			 }
 		 }
-	 }
+	 }*/
+	 
+	 //see products by category
 	 public void option2() {
 		 boolean found = false;
 		 Scanner input = new Scanner(System.in);
@@ -42,6 +63,7 @@ public class MenuFunction {
 			 System.out.println("Category not found");;
 			 }
 	 	}
+	 
 	 public void option3() {
 		 int i = 0;
 		 while (i < list1.size()) {

@@ -14,6 +14,8 @@ public class Interface extends Application{
 	static Stage searchStage;
 	static Stage seeAllStage;
 	static Stage signUpStage;
+	static Stage thanksStage;
+	static Stage categoryStage;
 	
 	@Override
 	public void start(Stage primaryStage) throws Exception {
@@ -38,7 +40,7 @@ public class Interface extends Application{
 			
 			
 			searchStage = new Stage();
-			URL searchPage1 = getClass().getClassLoader().getResource("EnterNamePage.fxml");
+			URL searchPage1 = getClass().getClassLoader().getResource("SearchProductPage.fxml");
 			Parent rootSearchPage = FXMLLoader.load(searchPage1);
 			Scene sceneSearchPage = new Scene(rootSearchPage);
 			
@@ -63,6 +65,21 @@ public class Interface extends Application{
 			signUpStage.setTitle("SignUpPage");
 			signUpStage.setScene(sceneSignUpPage);
 			
+			thanksStage = new Stage();
+			URL thankPage1 = getClass().getClassLoader().getResource("ThankYouPage.fxml");
+			Parent rootThanksPage = FXMLLoader.load(thankPage1);
+			Scene sceneThankPage = new Scene(rootThanksPage);
+			
+			thanksStage.setTitle("Thanks");
+			thanksStage.setScene(sceneThankPage);
+			
+			categoryStage = new Stage();
+			URL categoryStage1 = getClass().getClassLoader().getResource("ProductsByCategoryPage.fxml");
+			Parent rootCategoryPage = FXMLLoader.load(categoryStage1);
+			Scene sceneCaregoryPage = new Scene(rootCategoryPage);
+			
+			categoryStage.setTitle("Category");
+			categoryStage.setScene(sceneCaregoryPage);
 		}
 		catch(Exception e){
 			e.printStackTrace();

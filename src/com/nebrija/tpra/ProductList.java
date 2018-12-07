@@ -7,7 +7,7 @@ import java.util.ArrayList;
 public class ProductList {
 	
 	ArrayList <Product> lista = new ArrayList<Product>();
-	Product productToList = new Product();
+	static Product productToList = new Product();
 	
 
 	public void addProduct (Product productToList) {
@@ -44,6 +44,22 @@ public class ProductList {
 		
 	}
 	
+	public ArrayList<Product> getLista() {
+		return lista;
+	}
+
+	public void setLista(ArrayList<Product> lista) {
+		this.lista = lista;
+	}
+
+	public static Product getProductToList() {
+		return productToList;
+	}
+
+	public void setProductToList(Product productToList) {
+		this.productToList = productToList;
+	}
+
 	public void deleteProduct(Product productToList) {
 		lista.remove(productToList);
 	}

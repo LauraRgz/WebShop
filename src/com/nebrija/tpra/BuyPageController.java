@@ -4,6 +4,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.scene.text.Text;
 
 public class BuyPageController {
 
@@ -15,11 +16,14 @@ public class BuyPageController {
 
     @FXML
     private Button WebShopButton;
+    
+    @FXML
+    private Text thankYouText;
 
     @FXML
     void pressBuyButton(ActionEvent event) {
     	Interface.buyStage.close();
-    	Interface.webShopPrimary.show();
+    	Interface.thanksStage.show();
     }
 
     @FXML

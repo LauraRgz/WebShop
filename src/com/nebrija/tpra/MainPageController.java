@@ -89,20 +89,20 @@ public class MainPageController {
     @FXML
     void pressBooksButton(ActionEvent event) {
     	Interface.webShopPrimary.close();
-    	Interface.seeAllStage.show();
+    	Interface.categoryStage.show();
     }
     
 
     @FXML
     void pressFilmButton(ActionEvent event) {
     	Interface.webShopPrimary.close();
-    	Interface.seeAllStage.show();
+    	Interface.categoryStage.show();
     }
     
     @FXML
     void pressMusicButton(ActionEvent event) {
     	Interface.webShopPrimary.close();
-    	Interface.seeAllStage.show();
+    	Interface.categoryStage.show();
     }
 
 }

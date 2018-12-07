@@ -6,7 +6,6 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="749.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.nebrija.tpra.EnterNamePageController">
    <children>
       <TextField fx:id="nameText" layoutX="268.0" layoutY="135.0" onAction="#writeNameText" prefHeight="32.0" prefWidth="213.0">
@@ -14,7 +13,7 @@
             <Font name="Lucida Bright Italic" size="13.0" />
          </font>
       </TextField>
-      <Text layoutX="268.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter a name">
+      <Text layoutX="268.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter a names">
          <font>
             <Font name="Lucida Bright Italic" size="33.0" />
          </font>
@@ -24,7 +23,7 @@
             <Font name="Lucida Bright Regular" size="13.0" />
          </font>
       </Button>
-      <TextField fx:id="showText" editable="false" layoutX="268.0" layoutY="184.0" onAction="#viewShowText" prefHeight="331.0" prefWidth="213.0">
+      <TextField fx:id="showText" editable="false" layoutX="268.0" layoutY="184.0" onAction="#viewShowText" prefHeight="331.0" prefWidth="213.0" promptText="hola">
          <font>
             <Font size="13.0" />
          </font>
@@ -34,5 +33,6 @@
             <Font name="Lucida Bright Demibold Italic" size="13.0" />
          </font>
       </Button>
+      <Button fx:id="boton" layoutX="505.0" layoutY="199.0" mnemonicParsing="false" onAction="#pressBoton" prefHeight="25.0" prefWidth="68.0" text="Button" />
    </children>
 </Pane>

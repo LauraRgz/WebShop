@@ -8,22 +8,39 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 public class Main {
-
+	 static ProductList list1 = new ProductList();
+	 static Product producto;
+	 UserList list2 = new UserList();
+	 Product aux = new Product();
 	 
+
+
+	public static ProductList getList1() {
+		return list1;
+	}
+	
+	public static Product getProducto() {
+		return producto;
+	}
+
+
+
+	public void setList1(ProductList list1) {
+		this.list1 = list1;
+	}
+
 
 
 	public static void main(String[] args) throws Exception {
 		 
-		 ProductList list1 = new ProductList();
-		 UserList list2 = new UserList();
-		 Product aux = new Product();
+
 
 		 
 		 Product libro1 = new Product(2.0, "libro1", 3, 4.5, "Books");
 		 Product libro2 = new Product(7.0, "libro2", 8, 9.5, "Books");
 		 Product libro3 = new Product(7.0, "libro3", 8, 9.5, "Books");
 		 
-		 list1.addProduct(libro1);
+		 getList1().addProduct(libro1);
 		 list1.addProduct(libro2);
 		 list1.addProduct(libro3);
 		 
