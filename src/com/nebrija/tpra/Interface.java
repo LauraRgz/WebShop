@@ -16,6 +16,8 @@ public class Interface extends Application{
 	static Stage signUpStage;
 	static Stage thanksStage;
 	static Stage categoryStage;
+	static Stage categoryMusicStage;
+	static Stage categoryFilmsStage;
 	
 	@Override
 	public void start(Stage primaryStage) throws Exception {
@@ -78,8 +80,28 @@ public class Interface extends Application{
 			Parent rootCategoryPage = FXMLLoader.load(categoryStage1);
 			Scene sceneCaregoryPage = new Scene(rootCategoryPage);
 			
-			categoryStage.setTitle("Category");
+			categoryStage.setTitle("Books");
 			categoryStage.setScene(sceneCaregoryPage);
+			
+			categoryMusicStage = new Stage();
+			URL categoryMusicStage1 = getClass().getClassLoader().getResource("CategoryMusicPage.fxml");
+			Parent rootCategoryMusicPage = FXMLLoader.load(categoryMusicStage1);
+			Scene sceneCaregoryMusicPage = new Scene(rootCategoryMusicPage);
+			
+			categoryMusicStage.setTitle("Music");
+			categoryMusicStage.setScene(sceneCaregoryMusicPage);
+			
+			categoryFilmsStage = new Stage();
+			URL categoryFilmsStage1 = getClass().getClassLoader().getResource("CategoryFilmsPage.fxml");
+			Parent rootCategoryFilmsPage = FXMLLoader.load(categoryFilmsStage1);
+			Scene sceneCaregoryFilmsPage = new Scene(rootCategoryFilmsPage);
+			
+			categoryFilmsStage.setTitle("Films");
+			categoryFilmsStage.setScene(sceneCaregoryFilmsPage);
+			
+			
+			
+			
 		}
 		catch(Exception e){
 			e.printStackTrace();

@@ -5,7 +5,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 
-public class ProductsByCategoryPageController {
+public class CategoryFilmsPageController {
 
     @FXML
     private Button WebShopButton;
@@ -19,26 +19,24 @@ public class ProductsByCategoryPageController {
     @FXML
     void pressShowButton(ActionEvent event) {
     	String y = "";
-    	String z = "Books";
+    	String z = "Films";
     	for(int i = 0; i < Main.getList1().size(); i++) {
     		if (!z.equals(Main.getList1().get(i).getCategoryProduct())) {
     			y += Main.getList1().get(i).getName();
     			textArea.setText(y);
     			
     		}
-    		
     		else {
     			textArea.setText("Category not found");
     		}
     	}
-    	
     }
 
     @FXML
     void pressWebShopButton(ActionEvent event) {
-    	Interface.categoryStage.close();
+    	Interface.categoryFilmsStage.close();
     	Interface.webShopPrimary.show();
-    }
 
+    }
 
 }

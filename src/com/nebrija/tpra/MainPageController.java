@@ -96,13 +96,13 @@ public class MainPageController {
     @FXML
     void pressFilmButton(ActionEvent event) {
     	Interface.webShopPrimary.close();
-    	Interface.categoryStage.show();
+    	Interface.categoryFilmsStage.show();
     }
     
     @FXML
     void pressMusicButton(ActionEvent event) {
     	Interface.webShopPrimary.close();
-    	Interface.categoryStage.show();
+    	Interface.categoryMusicStage.show();
     }
 
 }
