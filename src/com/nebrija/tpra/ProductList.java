@@ -12,7 +12,7 @@ public class ProductList {
 
 	public void addProduct (Product productToList) {
 		lista.add(productToList);
-		File file = new File("./ProductList.txt");
+		/*File file = new File("./ProductList.txt");
 		FileOutputStream fos = null;
 		try {
 		
@@ -40,7 +40,7 @@ public class ProductList {
 			catch (Exception e) {
 				
 			}
-		}
+		}*/
 		
 	}
 	
