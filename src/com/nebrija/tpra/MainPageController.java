@@ -21,17 +21,8 @@ public class MainPageController {
     private MenuItem seeAllButton;
 
     @FXML
-    private MenuItem lastAddedButton;
-
-    @FXML
     private MenuButton categoryDeploy;
 
-    @FXML
-    private Button signUpButton;
-
-    @FXML
-    private Button aboutUsButton;
-    
     @FXML
     private MenuItem booksButton;
 
@@ -42,9 +33,21 @@ public class MainPageController {
     private MenuItem filmButton;
 
     @FXML
+    private Button signUpButton;
+
+    @FXML
+    private Button aboutUsButton;
+
+    @FXML
     void pressAboutUsButton(ActionEvent event) {
     	Interface.webShopPrimary.close();
-    	//Interface.
+    	Interface.aboutUsStage.show();
+    }
+
+    @FXML
+    void pressBooksButton(ActionEvent event) {
+    	Interface.webShopPrimary.close();
+    	Interface.categoryStage.show();
     }
 
     @FXML
@@ -54,8 +57,15 @@ public class MainPageController {
     }
 
     @FXML
-    void pressLastAddedButton(ActionEvent event) {
-    	
+    void pressFilmButton(ActionEvent event) {
+    	Interface.webShopPrimary.close();
+    	Interface.categoryFilmsStage.show();
+    }
+
+    @FXML
+    void pressMusicButton(ActionEvent event) {
+    	Interface.webShopPrimary.close();
+    	Interface.categoryMusicStage.show();
     }
 
     @FXML
@@ -78,31 +88,12 @@ public class MainPageController {
 
     @FXML
     void splitCategoryButton(ActionEvent event) {
-    	
+
     }
 
     @FXML
     void splitProductButton(ActionEvent event) {
-    	
-    }
-    
-    @FXML
-    void pressBooksButton(ActionEvent event) {
-    	Interface.webShopPrimary.close();
-    	Interface.categoryStage.show();
-    }
-    
 
-    @FXML
-    void pressFilmButton(ActionEvent event) {
-    	Interface.webShopPrimary.close();
-    	Interface.categoryFilmsStage.show();
-    }
-    
-    @FXML
-    void pressMusicButton(ActionEvent event) {
-    	Interface.webShopPrimary.close();
-    	Interface.categoryMusicStage.show();
     }
 
 }

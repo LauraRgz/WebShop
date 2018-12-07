@@ -27,7 +27,7 @@ public class SearchProductPageController {
     	
     	for (int i = 0; i< Main.getList1().size(); i++) {
 	    	if (!nameProduct.equals(Main.getList1().get(i).getName())) {
-	    		enterText.setText(nameProduct);
+	    		enterText.setText("Product in stock");
 	    	}
 	    	else
 	    		enterText.setText("Product not found");

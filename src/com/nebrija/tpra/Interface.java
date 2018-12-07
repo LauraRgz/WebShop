@@ -18,6 +18,8 @@ public class Interface extends Application{
 	static Stage categoryStage;
 	static Stage categoryMusicStage;
 	static Stage categoryFilmsStage;
+	static Stage thanks2Stage;
+	static Stage aboutUsStage;
 	
 	@Override
 	public void start(Stage primaryStage) throws Exception {
@@ -99,8 +101,22 @@ public class Interface extends Application{
 			categoryFilmsStage.setTitle("Films");
 			categoryFilmsStage.setScene(sceneCaregoryFilmsPage);
 			
+			thanks2Stage = new Stage();
+			URL thank2Page1 = getClass().getClassLoader().getResource("ThanksSignPage.fxml");
+			Parent rootThanks2Page = FXMLLoader.load(thank2Page1);
+			Scene sceneThank2Page = new Scene(rootThanks2Page);
 			
+			thanks2Stage.setTitle("Thanks");
+			thanks2Stage.setScene(sceneThank2Page);
 			
+			aboutUsStage = new Stage();
+			URL aboutUsPage1 = getClass().getClassLoader().getResource("AboutUsPage.fxml");
+			Parent rootAboutUsPage = FXMLLoader.load(aboutUsPage1);
+			Scene sceneAboutUsPage = new Scene(rootAboutUsPage);
+			
+			aboutUsStage.setTitle("About Us");
+			aboutUsStage.setScene(sceneAboutUsPage);
+					
 			
 		}
 		catch(Exception e){
