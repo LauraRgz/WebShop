@@ -3,7 +3,7 @@ package com.nebrija.tpra;
 import java.util.ArrayList;
 import java.util.Locale;
 
-public class Product{
+class Product{
 	private double id;
 	private String name;
 	private int stock;

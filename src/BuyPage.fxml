@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="749.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.nebrija.tpra.BuyPageController">
+   <children>
+      <Text layoutX="277.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter a name">
+         <font>
+            <Font name="Lucida Bright Italic" size="33.0" />
+         </font>
+      </Text>
+      <TextField fx:id="nameField" layoutX="278.0" layoutY="145.0" onAction="#writeNameField" prefHeight="32.0" prefWidth="213.0">
+         <font>
+            <Font name="Lucida Bright Italic" size="13.0" />
+         </font>
+      </TextField>
+      <Button fx:id="buyButton" layoutX="500.0" layoutY="145.0" mnemonicParsing="false" onAction="#pressBuyButton" prefHeight="32.0" prefWidth="68.0" text="Buy">
+         <font>
+            <Font name="Lucida Bright Regular" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="WebShopButton" layoutX="66.0" layoutY="530.0" mnemonicParsing="false" onAction="#pressWebShopButton" text="WebShop">
+         <font>
+            <Font name="Lucida Bright Demibold Italic" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>
