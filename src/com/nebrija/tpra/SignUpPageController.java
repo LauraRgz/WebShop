@@ -8,10 +8,10 @@ import javafx.scene.control.TextField;
 
 public class SignUpPageController {
 
-	UserList list2 = new UserList();
+	UserList list2 = new UserList();	
 	
     @FXML
-    private TextField emailText;
+	private TextField emailText;
 
     @FXML
     private TextField usernameText;
@@ -27,20 +27,27 @@ public class SignUpPageController {
 
     @FXML
     void enterEmailText(ActionEvent event) {
-
+    	
     }
 
     @FXML
     void enterUsernameText(ActionEvent event) {
-
+    	
     }
 
     @FXML
     void pressSignUpButton(ActionEvent event) {
-		 User user1 = new User(emailText.getText(), usernameText.getText(), passwordText.getText());
-		 list2.addUser(user1);
-		 
     	
+    	User user1 = new User(emailText.getText(), usernameText.getText(), passwordText.getText());
+		
+    	HiloLecturaCola lector = new HiloLecturaCola(user1);
+		HiloEscrituraCola escritor = new HiloEscrituraCola(user1, lector);
+		Thread hiloEscritor = new Thread(escritor);
+		hiloEscritor.start();
+		lector.start();
+    	
+    	list2.addUser(user1);
+		
     	Interface.signUpStage.close();
     	Interface.thanks2Stage.show();
     }
@@ -55,5 +62,30 @@ public class SignUpPageController {
     void writePassword(ActionEvent event) {
 
     }
+
+	public TextField getEmailText() {
+		return emailText;
+	}
+
+	public void setEmailText(TextField emailText) {
+		this.emailText = emailText;
+	}
+
+	public TextField getUsernameText() {
+		return usernameText;
+	}
+
+	public void setUsernameText(TextField usernameText) {
+		this.usernameText = usernameText;
+	}
+
+	public PasswordField getPasswordText() {
+		return passwordText;
+	}
+
+	public void setPasswordText(PasswordField passwordText) {
+		this.passwordText = passwordText;
+	}
+
 
 }

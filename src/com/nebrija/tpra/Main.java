@@ -12,7 +12,7 @@ public class Main {
 	 static Product producto;
 	 UserList list2 = new UserList();
 	 Product aux = new Product();
-	 
+	  
 
 
 	public static ProductList getList1() {
@@ -32,10 +32,7 @@ public class Main {
 
 
 	public static void main(String[] args) throws Exception {
-		 
 
-
-		 
 		 Product libro1 = new Product(2.0, "libro1", 3, 4.5, "Books");
 		 Product libro2 = new Product(7.0, "libro2", 8, 9.5, "Books");
 		 Product libro3 = new Product(7.0, "libro3", 8, 9.5, "Books");
