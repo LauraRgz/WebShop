@@ -147,9 +147,9 @@ I created three new classes:
 As it can be seen in the [Initial](https://github.com/LauraRgz/WebShop/blob/master/Final.jpg) image, I had 24.3%, after doing tests, i had 37.1% as it canbe seen in the [Final](https://github.com/LauraRgz/WebShop/blob/master/Final.jpg) image.
 
 * Initial image
-	![Initial](https://github.com/LauraRgz/WebShop/blob/master/Final.jpg)
+	![Initial](https://github.com/LauraRgz/WebShop/blob/master/Initial%202.jpg)
 * Final image
-	![Final](https://github.com/LauraRgz/WebShop/blob/master/Final.jpg)
+	![Final](https://github.com/LauraRgz/WebShop/blob/master/Final%202.jpg)
 
 
 
