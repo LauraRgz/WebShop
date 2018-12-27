@@ -137,9 +137,9 @@ This option stops the application
 Threads were implemented in order not to allow two user to register at the same time. When a user enters an username, an email and a password and presses the "Sign up" button, a message is sent to notify that an user is being registered and wether he user has been correctly registered or not. 
 
 I created three new classes:
-*[HiloEscrituraCola](https://github.com/LauraRgz/WebShop/blob/master/src/com/nebrija/tpra/HiloEscrituraCola.java)
-*[HiloLecturaCola]
-*[LectoraLineaComandos]
+* [HiloEscrituraCola](https://github.com/LauraRgz/WebShop/blob/master/src/com/nebrija/tpra/HiloEscrituraCola.java)
+* [HiloLecturaCola](https://github.com/LauraRgz/WebShop/blob/master/src/com/nebrija/tpra/HiloLecturaCola.java)
+* [LectoraLineaComandos](https://github.com/LauraRgz/WebShop/blob/master/src/com/nebrija/tpra/LectoraLineaComandos.java)
 
 
 
