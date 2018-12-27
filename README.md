@@ -144,5 +144,5 @@ I created three new classes:
 
 
 ## EclEmma
-As it can be seen in the ![Initial](./.master/Initial.jpg) image, I had 24.3%, after doing tests, i had 37.1% as it canbe seen in the [Final](https://github.com/LauraRgz/WebShop/blob/master/Final.jpg) image.
+As it can be seen in the ![Initial](https://github.com/LauraRgz/WebShop/blob/master/Final.jpg) image, I had 24.3%, after doing tests, i had 37.1% as it canbe seen in the ![Final](https://github.com/LauraRgz/WebShop/blob/master/Final.jpg) image.
 
