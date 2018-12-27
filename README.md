@@ -132,3 +132,10 @@ else if (selector == 6) {
 
 ### Option 0: Exit
 This option stops the application
+
+## Threads
+Threads were implemented in order not to allow two user to register at the same time. When a user enters an username, an email and a password and presses the "Sign up" button, a message is sent to notify that an user is being registered and wether he user has been correctly registered or not. 
+
+## EclEmma
+As it can be seen in the ["Initial"] (https://github.com/LauraRgz/WebShop/blob/master/Initial.jpg) image, I had 24.3%, after doing tests, i had 37.1% as it canbe seen in the ["Final"] (https://github.com/LauraRgz/WebShop/blob/master/Final.jpg) image.
+
